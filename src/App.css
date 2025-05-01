@@ -1,38 +1,450 @@
-.App {
+/* Глобальные стили */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Контейнер для центрирования контента */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.word-component.clickable-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Расстояние между иконкой и текстом */
+  font-size: 16px;
+}
+
+/* Добавление иконки */
+.word-component.clickable-block::before {
+  content: "🔍"; /* Иконка лупы */
+}
+
+.word-component.clickable-block:hover {
+  background-color: #e0e0e0; /* Изменяем цвет при наведении */
+  transform: scale(1.02); /* Легкое увеличение при наведении */
+}
+
+.word-component.clickable-block:active {
+  transform: scale(0.98); /* Эффект нажатия */
+}
+
+/* Стили для текста */
+.word-component.clickable-block p {
+  margin: 0; /* Убираем отступы у текста */
+  font-size: 18px;
+  color: #333;
+}
+
+/* Стили для кликабельного блока */
+.clickable-block {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer; /* Меняем курсор на указатель */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block; /* Чтобы блок занимал только нужное пространство */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.clickable-block:hover {
+  background-color: #0056b3; /* Изменяем цвет при наведении */
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.clickable-block:active {
+  transform: scale(0.95); /* Эффект нажатия */
+}
+
+/* Основные стили для компонента с текстом */
+.word-component {
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.word-component p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.word-component button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.word-component button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Основные стили для выбранного результата */
+.selected-result {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selected-result h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.selected-result p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.selected-result a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.selected-result a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Стили для видео */
+.player-wrapper {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-player {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Сообщение о загрузке */
+.player-wrapper p {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Основные стили для списка результатов */
+.search-results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-results h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.search-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-results li {
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.search-results li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.search-results a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.search-results a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Общие стили */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Основные стили для главной страницы */
+.home-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.game-modes {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.game-modes button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Стили для секции с инвайт-кодом */
+.invite-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.invite-section form {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.invite-section input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.invite-section button {
+  padding: 0.8rem 1.5rem;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.invite-section button:hover {
+  background-color: #1976D2;
+}
+
+/* Запрос инвайт кода на бэк */
+.fetch-container {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+  min-height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.fetch-container:hover {
+  background-color: #e9ecef;
+}
+
+.fetch-container div {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Дополнительные стили для навигации */
+.nav-back {
+  display: block;
+  margin: 20px 0;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* Стили для главной страницы */
+.home-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.mode-button {
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.mode-button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mode-button:active {
+  background-color: #3d8b40;
+}
+
+/* Стили для кнопки "Выбрать" */
+.select-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Стили для формы поиска */
+.search-form {
+  justify-content: center;
+  display: flex;
+  align-items: center; /* Выравниваем элементы по вертикали */
+  gap: 10px; /* Расстояние между элементами */
+  margin-bottom: 20px;
+}
+
+/* Стили для кнопки с микрофоном */
+.record-button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%; /* Круглая кнопка */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Размер кнопки */
+  height: 50px; /* Размер кнопки */
+}
+
+.record-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.record-button.recording {
+  background-color: #ff4444;
+  animation: pulse 1.5s infinite;
+}
+
+/* Анимация для кнопки записи */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.1);
   }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Стили для иконки микрофона */
+.microphone-icon {
+  width: 24px; /* Размер иконки */
+  height: 24px; /* Размер иконки */
+  filter: brightness(0) invert(1); /* Делаем иконку белой */
+}
+
+/* Стили для поля ввода */
+.search-form input {
+  width: 300px; /* Фиксированная ширина */
+  height: 30; /* Фиксированная высота */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  text-align: center;
+  flex-grow: 0; /* Поле ввода занимает всё доступное пространство */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-form input:focus {
+  border-color: #0056b3;
+}
+
+/* Стили для кнопки "Искать" */
+.search-form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Стили для иконки микрофона */
+.microphone-icon {
+  width: 24px; /* Размер иконки */
+  height: 24px; /* Размер иконки */
+  filter: brightness(0) invert(1); /* Делаем иконку белой */
 }
