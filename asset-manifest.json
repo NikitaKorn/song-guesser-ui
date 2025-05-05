@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/song-guesser-ui/static/css/main.fcb8ccdd.css",
-    "main.js": "/song-guesser-ui/static/js/main.fd2163ef.js",
+    "main.js": "/song-guesser-ui/static/js/main.5fd46902.js",
     "reactPlayerYouTube.js": "/song-guesser-ui/static/js/reactPlayerYouTube.b6d73fb4.chunk.js",
     "reactPlayerSoundCloud.js": "/song-guesser-ui/static/js/reactPlayerSoundCloud.fb64dfc5.chunk.js",
     "reactPlayerVimeo.js": "/song-guesser-ui/static/js/reactPlayerVimeo.ddb951f2.chunk.js",
@@ -19,7 +19,7 @@
     "static/js/453.c82d00be.chunk.js": "/song-guesser-ui/static/js/453.c82d00be.chunk.js",
     "index.html": "/song-guesser-ui/index.html",
     "main.fcb8ccdd.css.map": "/song-guesser-ui/static/css/main.fcb8ccdd.css.map",
-    "main.fd2163ef.js.map": "/song-guesser-ui/static/js/main.fd2163ef.js.map",
+    "main.5fd46902.js.map": "/song-guesser-ui/static/js/main.5fd46902.js.map",
     "reactPlayerYouTube.b6d73fb4.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerYouTube.b6d73fb4.chunk.js.map",
     "reactPlayerSoundCloud.fb64dfc5.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerSoundCloud.fb64dfc5.chunk.js.map",
     "reactPlayerVimeo.ddb951f2.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerVimeo.ddb951f2.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.fcb8ccdd.css",
-    "static/js/main.fd2163ef.js"
+    "static/js/main.5fd46902.js"
   ]
 }
