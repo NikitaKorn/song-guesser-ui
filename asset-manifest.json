@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/song-guesser-ui/static/css/main.fcb8ccdd.css",
+    "main.js": "/song-guesser-ui/static/js/main.7eae3109.js",
+    "reactPlayerYouTube.js": "/song-guesser-ui/static/js/reactPlayerYouTube.b6d73fb4.chunk.js",
+    "reactPlayerSoundCloud.js": "/song-guesser-ui/static/js/reactPlayerSoundCloud.fb64dfc5.chunk.js",
+    "reactPlayerVimeo.js": "/song-guesser-ui/static/js/reactPlayerVimeo.ddb951f2.chunk.js",
+    "reactPlayerMux.js": "/song-guesser-ui/static/js/reactPlayerMux.fdf9a9a9.chunk.js",
+    "reactPlayerFacebook.js": "/song-guesser-ui/static/js/reactPlayerFacebook.3cbd50af.chunk.js",
+    "reactPlayerStreamable.js": "/song-guesser-ui/static/js/reactPlayerStreamable.e0b2beac.chunk.js",
+    "reactPlayerWistia.js": "/song-guesser-ui/static/js/reactPlayerWistia.a2f4958a.chunk.js",
+    "reactPlayerTwitch.js": "/song-guesser-ui/static/js/reactPlayerTwitch.9dbbe42e.chunk.js",
+    "reactPlayerDailyMotion.js": "/song-guesser-ui/static/js/reactPlayerDailyMotion.69ac4c21.chunk.js",
+    "reactPlayerMixcloud.js": "/song-guesser-ui/static/js/reactPlayerMixcloud.7542701e.chunk.js",
+    "reactPlayerVidyard.js": "/song-guesser-ui/static/js/reactPlayerVidyard.599c8dc8.chunk.js",
+    "reactPlayerKaltura.js": "/song-guesser-ui/static/js/reactPlayerKaltura.cf0d1216.chunk.js",
+    "reactPlayerFilePlayer.js": "/song-guesser-ui/static/js/reactPlayerFilePlayer.aad27597.chunk.js",
+    "reactPlayerPreview.js": "/song-guesser-ui/static/js/reactPlayerPreview.5f1b9638.chunk.js",
+    "static/js/453.c82d00be.chunk.js": "/song-guesser-ui/static/js/453.c82d00be.chunk.js",
+    "index.html": "/song-guesser-ui/index.html",
+    "main.fcb8ccdd.css.map": "/song-guesser-ui/static/css/main.fcb8ccdd.css.map",
+    "main.7eae3109.js.map": "/song-guesser-ui/static/js/main.7eae3109.js.map",
+    "reactPlayerYouTube.b6d73fb4.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerYouTube.b6d73fb4.chunk.js.map",
+    "reactPlayerSoundCloud.fb64dfc5.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerSoundCloud.fb64dfc5.chunk.js.map",
+    "reactPlayerVimeo.ddb951f2.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerVimeo.ddb951f2.chunk.js.map",
+    "reactPlayerMux.fdf9a9a9.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerMux.fdf9a9a9.chunk.js.map",
+    "reactPlayerFacebook.3cbd50af.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerFacebook.3cbd50af.chunk.js.map",
+    "reactPlayerStreamable.e0b2beac.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerStreamable.e0b2beac.chunk.js.map",
+    "reactPlayerWistia.a2f4958a.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerWistia.a2f4958a.chunk.js.map",
+    "reactPlayerTwitch.9dbbe42e.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerTwitch.9dbbe42e.chunk.js.map",
+    "reactPlayerDailyMotion.69ac4c21.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerDailyMotion.69ac4c21.chunk.js.map",
+    "reactPlayerMixcloud.7542701e.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerMixcloud.7542701e.chunk.js.map",
+    "reactPlayerVidyard.599c8dc8.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerVidyard.599c8dc8.chunk.js.map",
+    "reactPlayerKaltura.cf0d1216.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerKaltura.cf0d1216.chunk.js.map",
+    "reactPlayerFilePlayer.aad27597.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerFilePlayer.aad27597.chunk.js.map",
+    "reactPlayerPreview.5f1b9638.chunk.js.map": "/song-guesser-ui/static/js/reactPlayerPreview.5f1b9638.chunk.js.map",
+    "453.c82d00be.chunk.js.map": "/song-guesser-ui/static/js/453.c82d00be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcb8ccdd.css",
+    "static/js/main.7eae3109.js"
+  ]
+}
