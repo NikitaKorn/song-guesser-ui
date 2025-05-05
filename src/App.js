@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/song-guesser-ui">
       <div className="app">
         <Routes>
           <Route path="/" element={<HomePage />} />
